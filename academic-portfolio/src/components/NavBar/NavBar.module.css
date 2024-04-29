@@ -1,0 +1,48 @@
+.navBar {
+  background-color: #a02b2b;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbarTitle {
+  margin-left: 32px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbarTitle a {
+  text-decoration: none;
+  color: #333;
+}
+
+.navbarList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.navbarLink {
+  display: flex;
+  flex-direction: row;
+  margin-right: 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbarLink a {
+  text-decoration: none;
+  color: #333;
+}
+
+.navbarLink:hover {
+  color: #666;
+}
