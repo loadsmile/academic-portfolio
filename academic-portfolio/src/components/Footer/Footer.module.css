@@ -1,0 +1,18 @@
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+.icon {
+  color: white; /* White color for icons */
+  margin: 0 10px;
+  font-size: 24px; /* Larger icons */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.icon:hover {
+  color: #aaa; /* Lighter color when hovered */
+}

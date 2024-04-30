@@ -1,31 +1,8 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +12,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+html, body {
+  height: 100%; /* Sets the minimum height of the entire document to fill the viewport */
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column; /* Stacks children (header, content, footer) vertically */
+  min-height: 100%; /* Ensures the root element fills at least the entire height of the viewport */
+}
+
+.content {
+  flex: 1; /* Takes up all available space that isn't taken by the header or footer */
+  display: flex;
+  flex-direction: column;
 }
