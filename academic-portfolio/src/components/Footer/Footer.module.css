@@ -3,7 +3,11 @@
   color: white;
   text-align: center;
   padding: 10px 0;
+  width: 100vw;  /* Ensures it takes the full viewport width */
   margin-top: auto; /* Pushes the footer to the bottom */
+  position: relative; /* Helps with exact positioning if needed */
+  left: 0; /* Align with the left edge */
+  bottom: 0; /* Align with the bottom edge */
 }
 
 .icon {
