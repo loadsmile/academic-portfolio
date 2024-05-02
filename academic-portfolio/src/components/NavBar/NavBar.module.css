@@ -1,18 +1,29 @@
 .navBar {
-  background-color: #606C38;
-  padding: 10px 20px;
+  background-color: #606c38;
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
+  height: fit-content;
+  position: relative;
+  padding: 20px 0;
+}
+
+.navBar::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #333;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .navbarTitle {
-  margin-left: 32px;
-  font-size: 20px;
-  font-weight: bold;
   color: #FEFAE0;
+  font-size: 56px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .navbarTitle a {
@@ -24,10 +35,12 @@
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   text-decoration: none;
+  width: 100%;
 }
 
 .navbarLink {
@@ -45,4 +58,50 @@
 
 .navbarLink:hover {
   color: #666;
+}
+
+.linkButton {
+  display: inline-block;
+  background-color: #283618;
+  color: #FEFAE0;
+  /* font-weight: bold; */
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.linkButton:hover {
+  background-color: #FEFAE0;
+  color: #283618;
+}
+
+@media (max-width: 768px) {
+  /* .navBar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  } */
+
+  /* .navbarList {
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .navbarLink {
+    margin-right: 08px;
+    margin-bottom: 8px;
+  }
+
+  .navbarTitle {
+    font-size: 32px; /* Smaller font size for smaller screens */
+    margin-bottom: 10px; /* Less spacing */
+  }
+
+  .linkButton {
+    padding: 8px 12px; /* Smaller padding for smaller screens */
+  }
 }

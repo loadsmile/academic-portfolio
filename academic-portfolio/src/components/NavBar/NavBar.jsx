@@ -9,10 +9,18 @@ const NavBar = () => {
         <h1 className={styles.navbarTitle}><Link to="/main">Susana Barradas</Link></h1>
       </div>
       <ul className={styles.navbarList}>
-        <li className={styles.navbarLink}><Link to="/research">Research</Link></li>
-        <li className={styles.navbarLink}><Link to="/teaching">Teaching</Link></li>
-        <li className={styles.navbarLink}><Link to="/projects">Projects</Link></li>
-        <li className={styles.navbarLink}><Link to="/contact">Contact</Link></li>
+        <li className={styles.navbarLink}>
+          <Link to="/research" className={styles.linkButton}>Research</Link>
+        </li>
+        <li className={styles.navbarLink}>
+          <Link to="/teaching" className={styles.linkButton}>Teaching</Link>
+        </li>
+        <li className={styles.navbarLink}>
+          <Link to="/publications" className={styles.linkButton}>Publications</Link>
+        </li>
+        <li className={styles.navbarLink}>
+          <Link to="/contact" className={styles.linkButton}>Contact</Link>
+        </li>
       </ul>
     </nav>
   );

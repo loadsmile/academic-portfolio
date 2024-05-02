@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Project = () => {
+const Publications = () => {
   return (
     <div>
-      <h1>Projects Page</h1>
+      <h1>Publications</h1>
       <p>Welcome to the projects section. Here's where we showcase our work.</p>
     </div>
   );
 }
 
-export default Project;
+export default Publications;
