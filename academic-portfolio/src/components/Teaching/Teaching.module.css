@@ -1,0 +1,32 @@
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  margin: 36px;
+}
+
+.title{
+  padding: 1rem;
+  margin: auto 36px ;
+  border-radius: 5px;
+}
+
+.currentContent {
+  padding: 1rem;
+  margin: auto 36px ;
+  border-radius: 5px;
+}
+
+.content {
+  padding: 1rem;
+  margin: auto 36px ;
+  border-radius: 5px;
+}
+
+.content:nth-child(odd) {
+  background-color: #EEF1E4; /* Light green background for odd paragraphs */
+}
+
+.content:nth-child(even) {
+  background-color: transparent; /* Transparent background for even paragraphs */
+}
