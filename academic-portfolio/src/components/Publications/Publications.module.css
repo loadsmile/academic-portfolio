@@ -1,0 +1,37 @@
+.publicationsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto 36px ;
+  position: relative;
+}
+
+.publicationsContainer::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #811515;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.author {
+  font-size: 1rem;
+  color: #666;
+}
+
+.source {
+  font-size: 0.9rem;
+}
+
+.year {
+  font-size: 0.8rem;
+  color: #666;
+}
