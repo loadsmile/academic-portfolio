@@ -65,7 +65,6 @@ const Publications = () => {
   return (
     <div>
       <h1>Publications</h1>
-      <p>Welcome to the projects section. Here's where we showcase our work.</p>
       <div className={styles.publicationsContainer}>
         {publicationsData.map((publication, index) => (
           <Publication key={index} {...publication} />
