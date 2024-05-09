@@ -6,12 +6,12 @@ import Research from './components/Research/Research';
 import Teaching from './components/Teaching/Teaching';
 import Publications from './components/Publications/Publications';
 import Contact from './components/Contact/Contact';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <Router>
-      <div className="content">
         <NavBar />
       <Routes>
         <Route path="/" element={<Main />} />
@@ -20,9 +20,9 @@ function App() {
         <Route path="/teaching" element={<Teaching/>} />
         <Route path="/publications" element={<Publications/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
-    </div>
     </Router>
   );
 }
