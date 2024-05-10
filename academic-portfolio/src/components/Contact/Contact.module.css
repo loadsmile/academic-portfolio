@@ -1,0 +1,48 @@
+.contactContainer {
+  display: flex;
+  justify-content: space-between; /* Aligns children (contactInfo and pictureDiv) on opposite ends */
+  align-items: center;
+  margin: 120px 0; /* Adds vertical margin to space it equally from NavBar and Footer */
+}
+
+.contactInfo {
+  flex: 1; /* Takes up the remaining space */
+  margin: 20px; /* Ensures there is some space around the text */
+}
+
+.mainTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 36px;
+}
+
+.email, .linkedin, .twitter {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  margin: 36px;
+}
+
+.email a, .linkedin a, .twitter a {
+  text-decoration: none; /* Removes underline from all links */
+  color: inherit; /* Ensures links use the inherit text color */
+}
+
+.profilePic {
+  width: 350px; /* Sets the width of the image */
+  height: auto; /* Maintains the aspect ratio */
+  margin: 20px 36px; /* Ensures some space between the text and the image and centers the image horizontally */
+  border-radius: 10%; /* Rounds the corners of the image */
+}
+
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column; /* Stacks children on top of each other */
+    align-items: center; /* Centers children horizontally */
+  }
+
+  .profilePic {
+    width: 60%; /* Sets the width of the image */
+    margin-top: auto; /* Adds top margin when stacked */
+    margin-bottom: auto; /* Adds bottom margin for space before the footer */  }
+}
