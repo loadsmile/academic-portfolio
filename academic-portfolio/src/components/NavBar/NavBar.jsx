@@ -15,8 +15,8 @@ const NavBar = () => {
       </div>
       <ul className={styles.navbarList}>
         <li className={styles.navbarLink}>
-          <NavLink to="/research" className={({ isActive }) => getNavLinkClass(isActive)}>
-            Research
+          <NavLink to="/media" className={({ isActive }) => getNavLinkClass(isActive)}>
+            Media
           </NavLink>
         </li>
         <li className={styles.navbarLink}>

@@ -1,0 +1,49 @@
+.mainTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  margin: 36px;
+}
+
+.mediaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto 36px ;
+  position: relative;
+}
+
+.article{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.article::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: darkgray;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.article:last-child::after {
+  display: none; /* Hide the line after the last publication */
+}
+
+.title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: -0.5rem;
+}
+
+.link {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.year {
+  font-size: 0.8rem;
+  color: #666;
+}
