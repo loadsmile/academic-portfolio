@@ -1,8 +1,25 @@
-h1 {
-  font-size: 2rem;
+.pageTitle {
+  font-size: 3rem;
   font-weight: bold;
-  margin: 1rem 0;
   margin: 36px;
+  display: flex;
+  justify-content: center;
+}
+
+.currentClasses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto 100px;
+  position: relative;
+}
+
+.pastClasses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto 100px;
+  position: relative;
 }
 
 .title{
@@ -29,4 +46,23 @@ h1 {
 
 .content:nth-child(even) {
   background-color: transparent; /* Transparent background for even paragraphs */
+}
+
+
+@media (max-width: 768px) {
+  .currentClasses,
+  .pastClasses {
+    margin: auto 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title, .currentContent, .content {
+    margin: 10px;
+  }
+
+  .pageTitle {
+    font-size: 1.75rem;
+    margin: 20px;
+  }
 }

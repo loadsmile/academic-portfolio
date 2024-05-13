@@ -63,8 +63,8 @@ const Publication = ({ title, author, source, year }) => (
 
 const Publications = () => {
   return (
-    <div>
-      <h1 className='mainTitle'>Publications</h1>
+    <div className={styles.pageContainer}>
+      <h1 className={styles.pageTitle}>Publications</h1>
       <div className={styles.publicationsContainer}>
         {publicationsData.map((publication, index) => (
           <Publication key={index} {...publication} />

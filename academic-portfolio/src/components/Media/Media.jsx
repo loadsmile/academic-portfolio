@@ -39,8 +39,8 @@ const Article = ({ title, link, year }) => (
 
 const Media = () => {
   return (
-    <div>
-      <h1 className='mainTitle'>Media</h1>
+    <div className={styles.pageContainer}>
+      <h1 className={styles.pageTitle}>Media</h1>
       <div className={styles.mediaContainer}>
         {articlesData.map((article, index) => (
           <Article key={index} {...article} />

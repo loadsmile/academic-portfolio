@@ -1,19 +1,27 @@
-.mainTitle {
-  font-size: 2rem;
+.pageTitle {
+  font-size: 3rem;
   font-weight: bold;
-  margin: 1rem 0;
   margin: 36px;
+  display: flex;
+  justify-content: center;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  margin: auto 36px;;
 }
 
 .publicationsContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: auto 36px ;
+  margin: auto 36px; /* Ensure the left margin matches the title */
   position: relative;
+  padding-left: 0; /* Remove padding to use margin for alignment */
 }
 
-.publication{
+.publication {
   position: relative;
   margin-bottom: 20px;
 }
@@ -52,4 +60,15 @@
 .year {
   font-size: 0.8rem;
   color: #666;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 1.5rem; /* Smaller font size for smaller devices */
+    margin: 20px;
+  }
+  .publicationsContainer {
+    margin: auto 20px; /* Ensure the left margin matches the title */
+    padding-left: 0; /* Remove padding to use margin for alignment */
+  }
 }
